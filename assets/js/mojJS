@@ -1,0 +1,358 @@
+
+    //------------------------- MESSAGES -----------------//
+
+    // if(window.location.href==url+"index.php?page=messages"|| window.location.href==url+"index.php?page=messages#"){
+    //         showUnreadMessages()
+    // }
+
+    // function showUnreadMessages(){
+    //      $.ajax({
+    //         url:"../../models/contact/unreadMessages.php",
+    //         dataType:"json",
+    //         method:"post",
+    //         success:function(data){
+    //             $(".obrisiMejl").click(deleteMessage);
+    //             $(".oznaciKaoProcitano").click(oznaciKaoProcitano)
+    //             $("#prikaziProcitaneMejlove").click(showReadMessages)
+    //             $("#podaciPoruke").hide();
+    //             $(".detaljnijeMejl").click(prikaziDetaljePoruke);
+    //         },
+    //         error:function(xhr,status,data){
+    //             alert(xhr.status + status);
+    //         }
+
+    //         success:function(data){
+    //             $("#tabelaMejlovi").html(vratiSveNeprocitaneMejlove(data));
+               
+    //             $("#detaljiMejlovi").hide();
+    //             $(".detaljnijeMejl").click(prikaziDetaljeMejla)
+    //         },
+    //         error:function(xhr,status,data){
+    //              alert(xhr.status + status);
+    //         }  
+    //      });
+    // }
+
+    // function showReadMessages(){
+    //     $.ajax({
+    //         url:"modules/mejlovi/svi-procitani-mejlovi.php",
+    //         dataType:"json",
+    //         method:"post",
+    //         success:function(data){
+    //             $("#tabelaMejlovi").html(vratiSveProcitaneMejlove(data));
+    //                 $(".obrisiMejl").click(deleteMessage);
+                
+    //             $("#prikaziNeprocitaneMejlove").click(showUnreadMessages)
+    //                 $("#detaljiMejlovi").hide();
+                
+    //             $(".detaljnijeMejl").click(prikaziDetaljeMejla)
+    //         },
+    //         error:function(xhr,status,data){
+    //             alert(xhr.status + status);
+    //         }
+    //     });
+    // }
+
+    // function vratiSveProcitaneMejlove(data) {
+    //     let br = 1;
+    //     let ispis = `<table class="korpa" border="1">
+    //                     <thead>
+    //                         <tr>
+    //                         <th>Redni broj</th>
+    //                         <th>Email</th>
+    //                         <th>Svrha poruke</th>
+    //                         <th>Datum</th>
+    //                         <th>Podešavanja | <a href="#"
+    //                         id="prikaziNeprocitaneMejlove">Prikazi neprocitane
+    //                         mejlove</a></th>
+    //                         </tr>
+    //                     </thead>
+    //                     <tbody>`;
+    //     for (let i of data) {
+    //         ispis += `<tr class="rem1">
+    //                     <td>${br++}</td>
+    //                     <td>${i.email}</td>
+    //                     <td>${i.svrha}</td>
+    //                     <td>${i.datum}</td>
+    //                     <td>
+    //                     <a href='#' data-id="${i.idMejl}" dataprocitano="1" class='btn btn-primary obrisiMejl'>Obrisi</a>
+    //                     <a href='#' data-id="${i.idMejl}" class='btn
+    //                     btn-primary detaljnijeMejl'>Detaljnije</a>
+    //                     </td>
+    //                 </tr>`;
+    //     }
+    //     ispis += `</tbody>
+    //                 </table>`;
+    //     return ispis;
+    // }
+
+    // function vratiSveNeprocitaneMejlove(data){
+    //     let br = 1;
+    //     let ispis = `<table class="korpa" border="1">
+    //                     <thead>
+    //                         <tr>
+    //                         <th>Redni broj</th>
+    //                         <th>Email</th>
+    //                         <th>Svrha poruke</th>
+    //                         <th>Datum</th>
+    //                         <th>Podešavanja | <a href="#" id="prikaziProcitaneMejlove">Prikazi procitane mejlove</a></th>
+    //                         </tr>
+    //                     </thead>
+    //                     <tbody>`;
+    //     for (let i of data) {
+    //         ispis += `<tr class="rem1">
+    //                     <td>${br++}</td>
+    //                     <td>${i.email}</td>
+    //                     <td>${i.svrha}</td>
+    //                     <td>${i.datum}</td>
+    //                     <td>
+    //                     <a href='#' data-id="${i.idMejl}" dataprocitano="0" class='btn btn-primary obrisiMejl'>Obrisi</a>
+    //                     <a href='#' data-id="${i.idMejl}" class='btn btn-primary detaljnijeMejl'>Detaljnije</a>
+    //                     <a href='#' data-id="${i.idMejl}" class='btn btn-primary oznaciKaoProcitano'>Oznaci kao procitano</a>
+    //                     </td>
+    //                 </tr>`;
+    //     }
+    //     ispis+=`</tbody>
+    //     </table>`;
+    //     return ispis;
+    // }
+
+    // function prikaziDetaljeMejla(e){
+    //     e.preventDefault();
+    //     let id=$(this).data("id");
+
+    //     $.ajax({
+    //         url:"modules/mejlovi/detalji-mejla.php",
+    //         dataType:"json",
+    //         method:"post",
+    //         data:{
+    //             id:id
+    //         },
+    //         success:function(data){
+    //             $("#detaljiMejlovi").hide();
+    //             $("#detaljiMejlovi").html(detaljiJednogMejlaTabela(data))
+    //             $("#detaljiMejlovi").slideDown("slow");
+
+    //             $("#sakriDetaljeMejla").click(function(){
+    //                 $("#detaljiMejlovi").slideUp("slow");
+    //             })
+    //         },
+    //         error:function(xhr,status,data){
+    //             alert(xhr.status + status);
+    //         }
+    //     });
+    // }
+
+    // function detaljiJednogMejlaTabela(data){
+    //     let ispis=`<table class="korpa" border="1" id="tabelaDetaljiMejla">
+    //                     <tr>
+    //                         <td>E-mejl pošiljaoca</td>
+    //                         <td>${data.email}</td>
+    //                         </tr>
+    //                         <tr>
+    //                         <td>Svrha poruke</td>
+    //                         <td>${data.svrha}</td>
+    //                         </tr>
+    //                         <tr>
+    //                         <td>Datum slanja</td>
+    //                         <td>${data.datum}</td>
+    //                         </tr>
+    //                         <tr>
+    //                         <td>Poruka</td>
+    //                         <td>${data.poruka}</td>
+    //                     </tr>
+    //                 </table>
+    //                 <button type="button" id="sakriDetaljeMejla" class="btn btn-primary">Sakri</button>`;
+    //     return ispis;
+    // }
+
+    // function deleteMessage(e){
+    //     e.preventDefault();
+    //     let id=$(this).data("id");
+    //     let isRead=Number($(this).data('procitano'));
+
+    //     $.ajax({
+    //         url:"models/contact/deleteMessage.php",
+    //         method:"post",
+    //         data:{
+    //             id:id,
+    //         },
+    //         success:function(data){
+    //             if(isRead==0){
+    //                 showUnreadMessages()
+    //                 console.log(isRead)
+    //             }else if(isRead==1){
+    //                 console.log(isRead)
+    //                 showReadMessages()
+    //             }
+    //         },
+    //         error:function(xhr,status,data){
+    //             alert(xhr.status + status);
+    //         }
+    //     });
+    // }
+
+    // function oznaciKaoProcitano(e){
+    //     e.preventDefault();
+    //     let id=$(this).data("id");
+
+    //     $.ajax({
+    //         url:"modules/mejlovi/oznaci-kao-procitano.php",
+    //         method:"post",
+    //         data:{
+    //             id:id,
+    //         },
+    //         success:function(data){
+    //             showUnreadMessages()
+    //         },
+    //         error:function(xhr,status,data){
+    //             alert(xhr.status + status);
+    //         }
+    //     });
+    // }
+        
+
+
+    //-- end messages
+    // insertAllMessages();
+     
+    //----------------- PORUKE ------------------------//
+    function insertAllMessages(){
+        $.ajax({
+           url:"../../modules/kontakt/svePoruke.php",
+           dataType:"json",
+           method:"post",
+           success:function(data){
+               $("#podaciPoruke").hide();
+               $(".detaljnijeMejl").click(detailsMessage);
+           },
+           error:function(xhr,status,data){
+               alert(xhr.status + status);
+           }
+       });
+    }
+    
+    
+    function detailsMessage(e){
+       e.preventDefault();
+       let id=$(this).data("id");
+           $.ajax({
+               url:"../../modules/kontakt/detaljno.php",
+               dataType:"json",
+               method:"post",
+               data:{
+                   id:id
+               },
+               success:function(data){
+                   $("#podaciPoruke").hide();
+                   $("#podaciPoruke").html(detaljiJednPorukeTabela(data))
+                   $("#podaciPoruke").slideDown("slow");
+    
+                   $("#sakriDetaljeMejla").click(function(){
+                       $("#podaciPoruke").slideUp("slow");
+                   })
+               },
+               error:function(xhr,status,data){
+                   alert(xhr.status + status);
+               }
+           });
+    }
+    
+    function detaljiJednPorukeTabela(data){
+       let ispis=`<table class="korpa" border="1" id="tabelaDetaljiMejla">
+                       <tr>
+                           <td>E-mejl pošiljaoca</td>
+                           <td>${data.email}</td>
+                       </tr>
+                       <tr>
+                           <td>Svrha poruke</td>
+                           <td>${data.naslov}</td>
+                       </tr>
+                       <tr>
+                           <td>Datum slanja</td>
+                           <td>${data.datum_slanja}</td>
+                       </tr>
+                       <tr>
+                           <td>Poruka</td>
+                           <td>${data.poruka}</td>
+                       </tr>
+                       </table>
+                       <button type="button" id="sakriDetaljeMejla" class="btn btn-primary">Sakrij detalje</button>`;
+           return ispis;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // function ispisiSvePoruke(){
+//     $.ajax({
+//        url:"../../models/contact/svePoruke.php",
+//        dataType:"json",
+//        method:"post",
+//        success:function(data){
+//            $("#podaciPoruke").hide();
+//            $(".detaljnijeMejl").click(prikaziDetaljePoruke);
+//        },
+//        error:function(xhr,status,data){
+//            alert(xhr.status + status);
+//        }
+//    });
+// }
+
+
+// function prikaziDetaljePoruke(e){
+//    e.preventDefault();
+//    let id=$(this).data("id");
+//        $.ajax({
+//            url:"../../models/contact/detaljno.php",
+//            dataType:"json",
+//            method:"post",
+//            data:{
+//                id:id
+//            },
+//            success:function(data){
+//                $("#podaciPoruke").hide();
+//                $("#podaciPoruke").html(detaljiJednPorukeTabela(data))
+//                $("#podaciPoruke").slideDown("slow");
+
+//                $("#sakriDetaljeMejla").click(function(){
+//                    $("#podaciPoruke").slideUp("slow");
+//                })
+//            },
+//            error:function(xhr,status,data){
+//                alert(xhr.status + status);
+//            }
+//        });
+// }
+
+// function detaljiJednPorukeTabela(data){
+//    let ispis=`<table class="korpa" border="1" id="tabelaDetaljiMejla">
+//                    <tr>
+//                        <td>E-mejl pošiljaoca</td>
+//                        <td>${data.email}</td>
+//                    </tr>
+//                    <tr>
+//                        <td>Svrha poruke</td>
+//                        <td>${data.naslov}</td>
+//                    </tr>
+//                    <tr>
+//                        <td>Datum slanja</td>
+//                        <td>${data.datum_slanja}</td>
+//                    </tr>
+//                    <tr>
+//                        <td>Poruka</td>
+//                        <td>${data.poruka}</td>
+//                    </tr>
+//                    </table>
+//                    <button type="button" id="sakriDetaljeMejla" class="btn btn-primary">Sakrij detalje</button>`;
+//        return ispis;
+// }
