@@ -1,0 +1,956 @@
+.logo{
+    font-size:30px !important;
+    color:deeppink;
+    font-weight: bold;
+    background-blend-mode: color-burn;
+    outline: none;
+    color: #FFFFFF;
+    text-shadow: -1px 0 0 #000000, 1px 1px 0 #000000,
+             2px -1px 0 #000000, 3px 0 0 #000000;
+}
+.logo:hover{
+    color:#ff5890;
+}
+
+
+#formaKontakt{
+	margin:10px auto; 
+  	padding-top:40px;
+}
+#forma input, #forma textarea{
+	transition:0.5s;
+	width:100%;
+	padding:15px;
+	background-color: #eee;
+	border: 3px solid transparent;
+	margin:10px 0px;
+	resize: none;
+	border-radius: 5px;
+}
+#forma input:focus, #forma textarea:focus{
+	border: 2px solid #D0D0D0;
+}
+#forma button{
+	transition:0.5s;
+	border: 2px solid transparent;
+	background-color: #D0D0D0;
+	border-radius: 5px;
+	font-size:30px;
+	color:#fff;
+	width:100px;
+	margin-left:35%;
+}
+#forma button:hover{
+	color:#999;
+	border: 2px solid #eee;
+	background:#eee;
+	cursor:pointer;
+}
+
+  /* Newsleter */
+#newsLetter{
+	text-align: center;
+	padding-top:20px;
+  	margin-top:2%;
+}
+input[type="email"]{
+  border-radius:5px;
+}
+input[type="email"]::placeholder{
+  font-family:'myFont';
+  font-size:14px;
+}
+#newsletterEmail{
+  font-size: 18px;
+  height: 40px;
+  width: 100%;
+  padding-left: 5px;
+  box-sizing: border-box;
+}
+#btnNewsletterEmail{
+	width: 100px;
+	height:40px;
+	border: 1px solid rgb(81,66,67);
+	border-radius: 5px;
+	background-color:  rgb(143, 43, 48);
+	color: #fff;
+	font-size: 11px;
+	letter-spacing: 1px;
+	line-height: 1;
+	padding: 10px;
+	margin:10px 0 10px 4px;
+	text-transform: uppercase;
+	transition: all 0.2s ease;
+}
+#btnNewsletterEmail:hover{
+  background-color:  #000;
+  color:#fff;
+  cursor: pointer;
+}
+.emailVesti-greska{
+	color: #dc3545 !important;
+	font-weight: bolder;
+	font-size: 15px;
+	display: none;
+}
+#formaObavestenje{
+	padding-bottom: 15px;
+}
+
+
+
+
+
+
+.wrapperMain{
+	width:95%;
+	margin:0 auto;
+}
+.central .wrapperMain{
+	display: flex;
+	justify-content: space-between;
+}
+.central{
+	font-size:14px;
+}
+#mainContact{
+	min-height:600px;
+	 padding:50px;
+	 margin: 0 auto;
+}
+::placeholder{
+    color:#000;
+}
+#mainContact h2{
+  text-align:center;
+  font-size:1.7rem;
+}
+#formaKontakt{
+	margin:10px auto; 
+  	padding-top:40px;
+}
+#forma input, #forma textarea{
+	transition:0.5s;
+	width:100%;
+	padding:15px;
+	background-color: #eee;
+	border: 3px solid transparent;
+	margin:10px 0px;
+	resize: none;
+	border-radius: 5px;
+}
+#forma input:focus, #forma textarea:focus{
+	border: 2px solid #D0D0D0;
+}
+#forma button{
+	transition:0.5s;
+	border: 2px solid transparent;
+	background-color: #D0D0D0;
+	border-radius: 5px;
+	font-size:30px;
+	color:#fff;
+	width:100px;
+	height:30px;
+	margin-left:35%;
+}
+#forma button:hover{
+	color:#999;
+	border: 2px solid #eee;
+	background:#eee;
+	cursor:pointer;
+}
+
+.text-danger{
+  
+    color: #f582acbf;
+}
+.text-pink{
+  
+    color: #dd757a;
+}
+
+.text-red{
+	  color:#ff0000;
+}
+.bttn{
+	border: 1px solid #4B9239;
+	color: #fff;
+	background: #ccc;
+	border-radius: 5px;
+	display: inline-block;
+	font-size: 10px;
+	letter-spacing: 1px;
+	line-height: 1;
+	padding: 10px;
+	margin:5px 0;
+	text-transform: uppercase;
+	transition: all 0.2s ease;
+}
+.bttnLog:hover {
+	background:#999;
+	color:#fff;
+}
+#mainContact h1{
+  	background:#eee;
+}
+
+label{
+    color:rgb(210, 255, 173);
+    font-weight: bold;
+}
+
+.subsc{
+	color:rgb(210, 255, 173);
+}
+
+
+
+input.sign__input.prvi{
+	width: 47%;
+	float: left;
+	margin: 5px;
+}
+
+input.sign__input.prvi.drugi{
+	float: right;
+}
+
+/*datapicker- materialize*/
+
+/* Modal */
+.datepicker-modal {
+	max-width: 325px;
+	min-width: 300px;
+	max-height: none;
+  }
+  
+  .datepicker-container.modal-content {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+			flex-direction: column;
+	padding: 0;
+  }
+  
+  .datepicker-controls {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
+			justify-content: space-between;
+	width: 280px;
+	margin: 0 auto;
+  }
+  
+  .datepicker-controls .selects-container {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+  }
+  
+  .datepicker-controls .select-wrapper input {
+	border-bottom: none;
+	text-align: center;
+	margin: 0;
+  }
+  
+  .datepicker-controls .select-wrapper input:focus {
+	border-bottom: none;
+  }
+  
+  .datepicker-controls .select-wrapper .caret {
+	display: none;
+  }
+  
+  .datepicker-controls .select-year input {
+	width: 50px;
+  }
+  
+  .datepicker-controls .select-month input {
+	width: 70px;
+  }
+  
+  .month-prev, .month-next {
+	margin-top: 4px;
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+  }
+  
+  /* Date Display */
+  .datepicker-date-display {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 auto;
+		-ms-flex: 1 auto;
+			flex: 1 auto;
+	background-color: #26a69a;
+	color: #fff;
+	padding: 20px 22px;
+	font-weight: 500;
+  }
+  
+  .datepicker-date-display .year-text {
+	display: block;
+	font-size: 1.5rem;
+	line-height: 25px;
+	color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .datepicker-date-display .date-text {
+	display: block;
+	font-size: 2.8rem;
+	line-height: 47px;
+	font-weight: 500;
+  }
+  
+  /* Calendar */
+  .datepicker-calendar-container {
+	-webkit-box-flex: 2.5;
+	-webkit-flex: 2.5 auto;
+		-ms-flex: 2.5 auto;
+			flex: 2.5 auto;
+  }
+  
+  .datepicker-table {
+	width: 280px;
+	font-size: 1rem;
+	margin: 0 auto;
+  }
+  
+  .datepicker-table thead {
+	border-bottom: none;
+  }
+  
+  .datepicker-table th {
+	padding: 10px 5px;
+	text-align: center;
+  }
+  
+  .datepicker-table tr {
+	border: none;
+  }
+  
+  .datepicker-table abbr {
+	text-decoration: none;
+	color: #999;
+  }
+  
+  .datepicker-table td {
+	border-radius: 50%;
+	padding: 0;
+  }
+  
+  .datepicker-table td.is-today {
+	color: #26a69a;
+  }
+  
+  .datepicker-table td.is-selected {
+	background-color: #26a69a;
+	color: #fff;
+  }
+  
+  .datepicker-table td.is-outside-current-month, .datepicker-table td.is-disabled {
+	color: rgba(0, 0, 0, 0.3);
+	pointer-events: none;
+  }
+  
+  .datepicker-day-button {
+	background-color: transparent;
+	border: none;
+	line-height: 38px;
+	display: block;
+	width: 100%;
+	border-radius: 50%;
+	padding: 0 5px;
+	cursor: pointer;
+	color: inherit;
+  }
+  
+  .datepicker-day-button:focus {
+	background-color: rgba(43, 161, 150, 0.25);
+  }
+  
+  
+
+
+  /* File Input
+   ========================================================================== */
+.file-field {
+	position: relative;
+  }
+  
+  .file-field .file-path-wrapper {
+	overflow: hidden;
+	padding-left: 10px;
+  }
+  
+  .file-field input.file-path {
+	width: 100%;
+  }
+  
+  .file-field .btn, .file-field .btn-large, .file-field .btn-small {
+	float: left;
+	height: 3rem;
+	line-height: 3rem;
+  }
+  
+  .file-field span {
+	cursor: pointer;
+  }
+  
+  .file-field input[type=file] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+  }
+  
+  .file-field input[type=file]::-webkit-file-upload-button {
+	display: none;
+  }
+
+
+  /* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+} */
+
+.btn, .btn-large, .btn-small,
+.btn-flat {
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 16px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn.disabled, .disabled.btn-large, .disabled.btn-small,
+.btn-floating.disabled,
+.btn-large.disabled,
+.btn-small.disabled,
+.btn-flat.disabled,
+.btn:disabled,
+.btn-large:disabled,
+.btn-small:disabled,
+.btn-floating:disabled,
+.btn-large:disabled,
+.btn-small:disabled,
+.btn-flat:disabled,
+.btn[disabled],
+.btn-large[disabled],
+.btn-small[disabled],
+.btn-floating[disabled],
+.btn-large[disabled],
+.btn-small[disabled],
+.btn-flat[disabled] {
+  pointer-events: none;
+  background-color: #DFDFDF !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #9F9F9F !important;
+  cursor: default;
+}
+
+.btn.disabled:hover, .disabled.btn-large:hover, .disabled.btn-small:hover,
+.btn-floating.disabled:hover,
+.btn-large.disabled:hover,
+.btn-small.disabled:hover,
+.btn-flat.disabled:hover,
+.btn:disabled:hover,
+.btn-large:disabled:hover,
+.btn-small:disabled:hover,
+.btn-floating:disabled:hover,
+.btn-large:disabled:hover,
+.btn-small:disabled:hover,
+.btn-flat:disabled:hover,
+.btn[disabled]:hover,
+.btn-large[disabled]:hover,
+.btn-small[disabled]:hover,
+.btn-floating[disabled]:hover,
+.btn-large[disabled]:hover,
+.btn-small[disabled]:hover,
+.btn-flat[disabled]:hover {
+  background-color: #DFDFDF !important;
+  color: #9F9F9F !important;
+}
+
+.btn, .btn-large, .btn-small,
+.btn-floating,
+.btn-large,
+.btn-small,
+.btn-flat {
+  font-size: 14px;
+  outline: 0;
+}
+
+.btn i, .btn-large i, .btn-small i,
+.btn-floating i,
+.btn-large i,
+.btn-small i,
+.btn-flat i {
+  font-size: 1.3rem;
+  line-height: inherit;
+}
+
+.btn:focus, .btn-large:focus, .btn-small:focus,
+.btn-floating:focus {
+  background-color: #1d7d74;
+}
+
+.btn, .btn-large, .btn-small {
+  text-decoration: none;
+  color: #fff;
+  background-color: #26a69a;
+  text-align: center;
+  letter-spacing: .5px;
+  -webkit-transition: background-color .2s ease-out;
+  transition: background-color .2s ease-out;
+  cursor: pointer;
+  width: 165px;
+}
+
+.btn:hover, .btn-large:hover, .btn-small:hover {
+  background-color: #2bbbad;
+}
+
+
+
+[type="date"] {
+	background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+  }
+  [type="date"]::-webkit-inner-spin-button {
+	display: none;
+  }
+  [type="date"]::-webkit-calendar-picker-indicator {
+	opacity: 0;
+  }
+  
+  label {
+	display: block;
+  }
+  input {
+	border: 1px solid #c4c4c4;
+	border-radius: 5px;
+	background-color: #fff;
+	padding: 3px 5px;
+	box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+	width: 190px;
+  }
+
+  /****moje**/
+  .sign__group.birth{
+	  width:430px;
+	  /* float:left; */
+  }
+
+  input#dateofbirth{
+	margin-bottom: 4%;
+	margin-left: 2%;
+  }
+
+  label.label_dateofbirth{
+	  float: left;
+	  color:#000;
+  }
+
+  .sign__groupProfile{
+	  float: right;
+	  margin-top: -35px;
+	 
+  }
+
+  .file-field.input-field{
+	margin-left: -120px;
+  }
+
+  label.label-register-profile{
+	margin-left: -120%;
+  }
+
+  form.sign__group{
+	  padding:4%;
+	  background-color: #222224;
+	  margin-top: 8%;
+	  margin-left: 8%;
+  }
+  /* form.sign__input{
+	  padding:10%;
+	  margin:3%;
+	  background-color: #2b2b31;
+  } */
+
+  #poruka{
+	  color:#fff;
+	  font-weight: bold;
+  }
+
+  .prikazTabela{
+	margin:50px auto;
+ }
+
+
+  /*modal-autor*/
+#autor {
+	width: 20%;
+	padding: 8px;
+	border: none;
+	color: rgb(175, 170, 175);
+	transition: .6s;
+	margin-bottom: 4px;
+	cursor: pointer;
+}
+#autor:hover {
+	background:#138808;
+	color:#fff;
+}
+.modal0 {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.modal0 .sadrzajModala0 {
+	background-color: #f4f4f4;
+	line-height: 1.5em;
+	margin: 10% auto;
+	padding: 20px;
+	width: 50%;
+	box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+	animation-name: otvori;
+	animation-duration: 1.5s;
+}
+.modal0 .sadrzajModala0 p{
+	font-size: 15px;
+}
+.modal0 .sadrzajModala0 a {
+	color: #7CCD80;
+	text-decoration: none;
+}
+.modal0 .sadrzajModala0 a:hover {
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+}
+#zatvori0 a:hover{
+	background:#777;
+}
+.modal0 .sadrzajModala0 #autorImg {
+	width: 30%;
+	height: 30%;
+	margin: 0px auto;
+	padding-top: 20px;
+}
+.modal0 .sadrzajModala0 #autorImg img {
+	width: 100%;
+	height: 100%;
+}
+.modal0 .sadrzajModala0 #zatvori0 {
+	float: right;
+	color: #ccc;
+	font-size: 25px;
+}
+.modal0 .sadrzajModala0 #zatvori0:hover, .modal0 .sadrzajModala0 #zatvori0:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+@keyframes otvori {
+	from {
+	  opacity: 0;
+	}
+	top {
+	  opacity: 1;
+	}
+}
+  /* Tooltip */
+.test+.tooltip>.tooltip-inner {
+	background-color: rgb(152, 161, 139);
+	color: rgb(255, 248, 248);
+	border: 1px solid rgb(54, 56, 54);
+	padding: 15px;
+	font-size: 20px;
+}
+.test+.tooltip.bottom>.tooltip-arrow {
+	border-bottom: 5px solid blue;
+}
+
+div#success{
+	margin-left: 20%;
+	color:#5c304d;;
+}
+
+div#dodatak{
+	margin-top: 4%;
+}
+.col-6.col-sm-4.col-lg-3.col-xl-2.levo{
+	float: left;
+}
+
+.card{
+	background:transparent;
+}
+.breadcrumb{
+	background:transparent;
+}
+
+
+div#filmovi{
+	color: antiquewhite;
+	font-size: 30px;
+	
+}
+
+.red::placeholder{
+	color:red;
+}
+
+/* ul#deoZaKomentare {
+    height: 100%;
+	background: red;
+	
+} */
+
+/*********************************** ADMIN ******************************/
+/* .main__table{
+	width: 100%!important;
+	margin: 0 auto !important;
+} */
+.main__table td{
+	margin: 0 auto !important;
+	text-align: center;
+}
+
+div#podaciQualityAdd, div#podaciGenresAdd, div#podaciCountryAdd, div#podaciLimitAgeAdd, div#podaciNavAdd{
+	margin-left: 25%;
+	color:white;
+	display: none;
+
+}
+
+div#podaciQualityEdit, div#podaciGenresEdit, div#podaciCountryEdit, div#podaciLimitAgeEdit, div#podaciNavEdit{
+	margin-left: 25%;
+	color:white;
+	display: none;
+}
+div#podaci{
+	color:white;
+	display: none;
+}
+form#formaReview{
+	display: none;
+}
+
+.btnAdminUpdate{
+	padding: 4px;
+	border-radius:4px;
+	box-shadow: 2px 2px 8px #999;
+	/* background: rgb(167, 164, 164) !important; */
+	border: none;
+	color:black;
+	outline: none;
+	display: inline-block;
+	-webkit-appearance:none;
+	-moz-appearance: none;
+	appearance: none;
+	cursor: pointer;
+	margin-left: 5%;
+}
+
+.form-inline .form-control{
+	width: 100%!important;
+}
+
+#ddlUloga, #ddlPlan{
+	/* background-color: rgb(82, 79, 79); */
+	width:100% !important;
+	background-color: #3b3b44;
+    border: none;
+    height: 50px;
+    position: relative;
+    color: #fff;
+    font-size: 15px;
+    /* width: 100%; */
+    color: #fff;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    padding: 0 20px;
+    letter-spacing: 0.2px;
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
+}
+
+#ddlUloga::after{
+	content:" ";
+	width:10px;
+	height:10px;
+	position: absolute;
+	background:red;
+	top:0;
+	right:0;
+}
+
+.text-white{
+	color:#fff;
+	font-weight:bold;
+	border-right:1px solid #fff;
+}
+.text-bela{
+	color:#fff;
+	font-weight:bold;
+}
+
+	.text-belaGreske {
+		color: #fff;
+		font-weight: bold;
+		margin-left: 25%;
+		font-size: 30px;
+	}
+#tabelaReviewsUser, #tabelaReviewsAdmin{
+	color:#fff;
+	font-weight:bold;
+	text-align: center;
+}
+
+.fa-star{
+	color:#ff5860;
+	font-size: 20px;
+}
+.odvoji{
+	margin-left:10px;
+}
+
+div#filter__genre, div#filter__sort{
+	width: 180px;
+}
+
+input#notification {
+    width: 100%;
+	margin-bottom: 10px;
+	font-size: 18px;
+    height: 40px;
+    width: 100%;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+.emailVestigreska{
+	color: #dc3545 !important;
+	font-weight: bolder;
+	font-size: 15px;
+	display:none;
+}
+
+.actors__item {
+	display: block;
+  }
+  .pTag{
+	  margin-bottom: 0!important;
+  }
+
+  .text-centar{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		font-size: 12px;
+		color: #fff;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+		line-height: 21px;
+		letter-spacing: 0.2px;
+  }
